@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api Model View</title>
+</head>
+<body>
+    <!-- <h1>hello sir  {{params|floatformat:2}}</h1> -->
+    <h1>hello sir  {{params}}</h1>
+    {% if params == 'learn django' and param == 'learn python' %}
+    <h3>this is right answer {{params}} and {{param}}</h3>
+    {% endif %}
+
+
+ {% if params and param %}
+    <h3>this is right answer {{params}} and {{param}}</h3>
+    {% endif %}   
+
+ {% if params == 'learn django' or param == 'learn python' %}
+    <h3>this is right answer {{params}} and {{param}}</h3>
+    {% endif %}
+
+     {% if params == 'learn django' not  param == 'learn python' %}
+    <h3>this is right answer {{params}} and {{param}}</h3>
+    {% endif %}
+
+
+
+</body>
+</html>
